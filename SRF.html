@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSKINVALI's PORTFOLIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #684646;
+            color: #752727;
+        }
+
+        header {
+            background-color: #194153;
+            color: #dfdada;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #d3ebf1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fef1d8;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .card {
+            flex: 1 1 300px;
+            max-width: 300px;
+            background-color: #fff;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Queries */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .card {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .card {
+                flex: 1 1 30%;
+                max-width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MUSKINVALI</h1>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="card">
+                <h2>PROJECT 1</h2>
+                <p>A brief description of Project 1. You can add more details or links here.</p>
+            </div>
+            <div class="card">
+                <h2>PROJECT 2</h2>
+                <p>A brief description of Project 2. Describe your tech stack or challenges solved.</p>
+            </div>
+            
+            
+<div class="card">
+                <h2>PROJECT 3</h2>
+                <p>A brief description of Project 3. Highlight outcomes or learnings.</p>
+            </div>
+            </section>
+            
+        
+    </main>
+
+    <footer>
+        <span>&copy;  SMV PVT LTD</span>
+    </footer>
+
+</body>
+</html>
+

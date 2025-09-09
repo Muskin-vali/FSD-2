@@ -1,0 +1,94 @@
+<!DOCTyPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <meta name="viewport" content="width=devide-width,initial-scale=0.1">
+        <style>
+            body{
+                font-family:Arial;
+                background: azure;
+                margin:0;
+                padding:0;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+            .form-container{
+                width: 90%;
+                max-width: 600px;
+                background: rgb(143, 159, 107);
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgb(41, 39, 39);
+            }
+            .form-name{
+
+            }
+            .row{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap:2px;
+                margin: 12px;
+                align-items: center;
+            }
+            label{
+
+            }
+            input select{
+                transition: border-color 0.3s;
+            }
+            input:focus select:focus{
+                border-color: rgb(43, 162, 162);
+            }
+            button:hover{
+                background: red;
+            }
+        </style>
+    </head>
+    <body align="center">
+     <div class="form-container">
+        <div align="center">Student Registration Form</div>
+        <div>
+            <form>
+                <div class="row">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="row">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+                </div>
+                <div class="row">
+                    <label for="hobbies">Hobbies</label>
+                    <textarea id="hobbies" name="hobbies" row="5" cols="40" placeholder="Enter Your Hobbies"></textarea>
+                </div>
+                <div class="row">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" required>
+                </div>
+                <div class="row">
+                    <label for="password">Confirm Password</label>
+                    <input type="text" name="password" id="password" required>
+                </div>
+                <div class="row">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" row="5" cols="40" placeholder="Enter Your Address"></textarea>
+                </div>
+                <button type="submit">REGISTER</button>
+            </form>
+        </div>
+     </div>   
+    </body>
+</html>
